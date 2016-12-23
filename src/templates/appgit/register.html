@@ -1,0 +1,38 @@
+{% extends 'appgit/base.html' %}
+
+{% block content %}
+
+	<h1 align='center'>GIT Register</h1>
+	<div class="login_div" >
+		<form class="" action='/appgit/register/' method='POST'>
+			{% csrf_token %}
+			<!-- 用户名:<input name='username' type='text'/> -->
+			用户名:{{form.username}}
+			<br/><br/>
+			<!--密&nbsp;码:<input name='password' type='text'/> -->
+			密&nbsp;码:{{form.password}}
+			<br/><br/>
+			<!-- 邮&nbsp;箱:<input name='email' type='text' /> -->
+			邮&nbsp;箱:{{form.email}}
+			<br/><br/>
+			选择部门:<select  name="department">
+				{% for depart in departments %}
+					<option name="department" value='{{depart.id}}'>{{depart.dpname}}</option>
+  				{% endfor %}
+			</select>
+			<br/><br/>
+			<input type='submit' value="生成秘钥" />
+			<span class='msgstatus'>{{status}}</span>
+		</form>	
+		<br/>
+		<div style="text-align:center;"><a class="go_re_link" href='/appgit/login/'><input class="go_login_input" type='button' value="已注册,去登录>>"/></a>
+
+	</div>
+	
+	
+	
+	<script type="text/javascript">
+//隐藏注销按钮
+	$('#lout').addClass('hide_logout')
+	</script>
+{% endblock %}

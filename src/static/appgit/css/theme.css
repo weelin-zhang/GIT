@@ -1,0 +1,62 @@
+@CHARSET "UTF-8";
+
+body{
+	background:url(/static/appgit/images/bg.jpg);
+	opacity:0.99;
+}
+
+h1{
+	color:#00ff00;
+}
+
+.login_div{
+	position:relative;
+	border:1px solid #c0c0c0;
+	margin: 0 auto;
+	padding:20px;
+	text-align:center;
+	width:600px;
+}
+
+
+.textarea_div{
+	margin: 0 auto;
+	padding:20px;
+	text-align:center;
+
+	
+}
+
+a{
+	text-decoration:none;
+}
+
+a.go_re_link{
+	margin-right:6px;
+}
+
+
+.white{
+	color:#ffffff;
+}
+input.go_re_input{
+	
+	width:150px;
+}
+
+input.go_login_input{
+	
+	width:150px;
+}
+a.logout{
+	color:red;
+	position:fixed;
+	top:20px;
+	right:20px;
+
+}
+a.hide_logout{
+	display:none;
+}
+/*注销按钮*/
+

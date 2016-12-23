@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>GIT</title>
+ <link rel="stylesheet" type="text/css" href="/static/appgit/css/theme.css" />
+<script src="/static/jquery/jquery-3.0.0.js"></script>
+<script src="/static/jquery/jquery.cookie.js"></script>
+<script src="/static/appgit/js/zjgl.js"></script>
+</head>
+<body>
+
+	<div>
+		<a id='lout' class="logout" href='/appgit/logout/'>注销</a>
+		{% block content %}{% endblock %}
+		
+	</div>
+
+<script>
+
+	setInterval('HideMsg()',2500);
+
+
+</script>
+</body>
+</html>

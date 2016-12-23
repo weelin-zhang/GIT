@@ -1,0 +1,30 @@
+{% extends 'appgit/base.html' %}
+
+{% block content %}
+	<h1 align='center'>GIT LOGIN</h1>
+	<div class="login_div">
+		<form class='' action='/appgit/login/' method='POST'>
+			{% csrf_token %}
+			用户名:<input name='username' type='text' placeholder="username"/>
+			密码:<input name='password' type='password' placeholder="password"/>
+			
+			<br/><br/><br/>
+			<input class="go_login_input" type='submit' value="登录" />
+			<br/>
+		</form>	
+		<span style="position:absolute;right:150px;bottom:60px;color:red" class='msgstatus'>{{status}}</span>
+		<br/>
+		<div><a class="go_re_link" href='/appgit/register/'><input class="go_re_input" type='button' value="没有账户,去注册>>"/></a>
+		</div>
+	</div>
+	
+	<div>
+		
+	</div>
+	
+	<script type="text/javascript">
+//隐藏注销按钮
+	$('#lout').addClass('hide_logout')
+	
+	</script>
+{% endblock %}
