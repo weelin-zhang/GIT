@@ -13,7 +13,7 @@ from email.mime.multipart import MIMEMultipart#发送附件
 mail_host="smtp.sina.com"  #设置新浪服务器
 sender="pythonemailtest@sina.cn"
 prefixinfo = 'Git Adminstrator'
-mail_user,mail_pass='pythonemailtest@sina.cn','pythontestxxxx'
+mail_user,mail_pass='xxxxxxxxx@sina.cn','xxxx'
 
 def send_mail_fujian(mailto,sub,attachment_path_list,mail_host,mail_user,mail_pass):
     '''
